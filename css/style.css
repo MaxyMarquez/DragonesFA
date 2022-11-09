@@ -7,6 +7,11 @@
     font-family: 'Saira Semi Condensed', sans-serif;
     scroll-behavior: smooth;
 }
+
+.carrousel img {
+    width: 500px;
+    height: 500px;
+}
 .tabla {
     display: flex;
     justify-content: center;
