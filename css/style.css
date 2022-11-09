@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+.tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    box-shadow: 5px 5px 20px rgb(97, 97, 97);
+}
+.score-score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score-container img {
+    width: 100px;
+}
+
+.score-teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.score-game {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(97, 97, 97);
+}
+
+
+.score-teams2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 50px;
+}
+
+.table {
+    font-size: 1rem;
+    width: 25%;
+}
+
+.table th {
+    width: 10px;
+}
+
+@media (min-width: 992px) {
+    .score-container img {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .score-teams {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 100px;
+    }
+
+    .score-teams2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 100px;
+    }
+}
+
+.navbar {
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.nav-logo {
+    width: 100px;
+}
+
+/* CONTACTO */
+.contact {
+    padding-top: 35px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus,
+textarea[type]:focus,
+input:focus,
+input[type]:focus {
+    border-color: rgba(0, 128, 0, 0.342);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(0, 128, 0, 0.342);
+    outline: 0 none;
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}

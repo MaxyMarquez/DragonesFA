@@ -1,0 +1,66 @@
+.score-container {
+    display: grid;
+    grid-row: 3;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgb(97, 97, 97);;
+}
+
+.score-teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-container img {
+    width: 100px;
+}
+
+.score-teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(97, 97, 97);
+}
+.score-teams2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 50px;
+}
+
+@media (min-width: 992px) {
+    .score-container span {
+        padding-left: 20px;
+    }
+
+    .score-teams {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 50px;
+    }
+
+    .score-teams2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 50px;
+    }
+}
