@@ -12,8 +12,8 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    box-shadow: 5px 5px 20px rgba(110, 110, 110, 0.801);
-    margin: 2%;
+    box-shadow: 1px 1px 30px rgba(17, 128, 2, 0.473);
+    margin: 2%; 
 }
 
 .team-container {
@@ -91,7 +91,11 @@
 
 .navbar {
     font-size: 1.2rem;
-    background-color: white;
+    background-color: rgb(17, 128, 2);
+}
+
+.navbar a {
+    color: white;
 }
 
 .nav-logo {
@@ -112,7 +116,7 @@ textarea[type]:focus,
 input:focus,
 input[type]:focus {
     border-color: rgba(0, 128, 0, 0.342);
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(0, 128, 0, 0.342);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(17, 128, 2, 0.473);
     outline: 0 none;
 }
 .contact a {
@@ -125,3 +129,35 @@ input[type]:focus {
     letter-spacing: 2px;
 }
 
+.carrousel {
+    width: 500px;
+    height: 400px;
+}
+
+.carousel-image {
+    height: 60vh;
+}
+
+.bg-img1 {
+    background-image: url(../img/295613164_5250315368354961_8287305791752428416_n.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news {
+    height: 80vh;
+    margin: 2%;
+    
+}
+
+.game {
+    height: 80vh;
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://www.publicdomainpictures.net/pictures/330000/velka/black-lines-stripes-illustration-1586947218ETs.jpg");
+}
