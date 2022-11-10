@@ -8,86 +8,84 @@
     scroll-behavior: smooth;
 }
 
-.carrousel img {
-    width: 500px;
-    height: 500px;
-}
-.tabla {
-    display: flex;
-    justify-content: center;
+.score-container {
+    display: grid;
     align-items: center;
-    height: 100vh;
+    justify-items: center;
+    box-shadow: 5px 5px 20px rgba(110, 110, 110, 0.801);
+    margin: 2%;
 }
 
-.score-container {
-    display: flex;
-    justify-content: center;
+.team-container {
+    display: grid;
     align-items: center;
+    justify-items: center;
+    padding: 30px 0;
+}
+
+.tabla {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    text-align: center;
+    
+}
+
+.team1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     font-size: 2rem;
-    box-shadow: 5px 5px 20px rgb(97, 97, 97);
-}
-.score-score{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.score-container img {
-    width: 100px;
+    margin: 20px;
 }
 
-.score-teams {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
-}
-
-.score-game {
-    font-size: 3rem;
-    font-weight: 800;
-    color: rgb(97, 97, 97);
-}
-
-
-.score-teams2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    margin: 50px;
-}
-
-.table {
+.team .wl {
     font-size: 1rem;
-    width: 25%;
+    color: rgb(150, 150, 150);
 }
 
-.table th {
-    width: 10px;
+.team-score {
+    font-size: 3.5rem;
+    color: rgb(83, 83, 83);
 }
 
 @media (min-width: 992px) {
-    .score-container img {
-        padding-left: 20px;
-        padding-right: 20px;
+    .team-container {
+        display: flex;
+
     }
 
-    .score-teams {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .team1, .team2 {
         flex-direction: row;
-        margin-left: 100px;
+    }
+    .team {
+        align-items: flex-end;
+        margin: 20px;
+    }
+    .team2 {
+        flex-direction: row-reverse;
     }
 
-    .score-teams2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        margin-right: 100px;
+    .team2 .team {
+        align-items: flex-start;
+    }
+
+    .tabla {
+        padding: 30px;
     }
 }
 
@@ -126,3 +124,4 @@ input[type]:focus {
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
+
